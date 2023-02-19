@@ -11,14 +11,14 @@ max_intentos = 0
 min_intentos = 0
 suma_intentos = 0
 
-# Iniciamos las variables que usaremos para decir el rango
+# Iniciamos las variables que usaremos para decir el rango del numero aleatorio
 rango_alto = 100
 rango_bajo = 1
 
 # Mientras queramos seguir jugando ejecutamos el bucle
 while continuar == "si" or continuar == "Si":
 
-    # Creamos el número aleatorio y preguntamos el número de intentos y sumamos el contador de partidas jugadas.
+    # Creamos el número aleatorio y preguntamos el número de intentos y despues sumamos el contador de partidas jugadas.
     n_aleatorio = random.randint(1, 100)
 
     partidas_jugadas += 1
@@ -33,7 +33,7 @@ while continuar == "si" or continuar == "Si":
 
         # Si hemos acertado imprimimos el mensaje que hemos ganado y aumentamos en uno las partidas jugadas y
         # ganadas, ademas de calcular el max y minimo de intentos y sumar los intentos en una variable. Por ultimo
-        # detenemos el bucle
+        # detenemos el bucle para no seguir
         if n == n_aleatorio:
             print(f"Muy bien!!! Has acertado en {i} intentos")
             partidas_ganadas += 1
