@@ -1,5 +1,5 @@
 # Fernando José Pereira Salvador
-
+# Importamos el paquete random
 import random
 
 # Iniciamos las variables para contar las partidas jugadas, las ganadas y el maximo y minimo de intentos. Ademas de una
